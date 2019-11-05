@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <camera id="camera" device-position="back" flash="off" binderror="error">
+  </camera>
+</view>
