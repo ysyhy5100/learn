@@ -2,4 +2,5 @@
 <view class="container">
   <camera id="camera" device-position="back" flash="off" binderror="error">
   </camera>
+  <canvas canvas-id="pose"></canvas>
 </view>

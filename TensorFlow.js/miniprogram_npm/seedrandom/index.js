@@ -4,7 +4,7 @@ var __DEFINE__ = function(modId, func, req) { var m = { exports: {} }; __MODS__[
 var __REQUIRE__ = function(modId, source) { if(!__MODS__[modId]) return require(source); if(!__MODS__[modId].status) { var m = { exports: {} }; __MODS__[modId].status = 1; __MODS__[modId].func(__MODS__[modId].req, m, m.exports); if(typeof m.exports === "object") { __MODS__[modId].m.exports.__proto__ = m.exports.__proto__; Object.keys(m.exports).forEach(function(k) { __MODS__[modId].m.exports[k] = m.exports[k]; var desp = Object.getOwnPropertyDescriptor(m.exports, k); if(desp && desp.configurable) Object.defineProperty(m.exports, k, { set: function(val) { __MODS__[modId].m.exports[k] = val; }, get: function() { return __MODS__[modId].m.exports[k]; } }); }); if(m.exports.__esModule) Object.defineProperty(__MODS__[modId].m.exports, "__esModule", { value: true }); } else { __MODS__[modId].m.exports = m.exports; } } return __MODS__[modId].m.exports; };
 var __REQUIRE_WILDCARD__ = function(obj) { if(obj && obj.__esModule) { return obj; } else { var newObj = {}; if(obj != null) { for(var k in obj) { if (Object.prototype.hasOwnProperty.call(obj, k)) newObj[k] = obj[k]; } } newObj.default = obj; return newObj; } };
 var __REQUIRE_DEFAULT__ = function(obj) { return obj && obj.__esModule ? obj.default : obj; };
-__DEFINE__(1572948423859, function(require, module, exports) {
+__DEFINE__(1573029243145, function(require, module, exports) {
 // A library of seedable RNGs implemented in Javascript.
 //
 // Usage:
@@ -66,8 +66,8 @@ sr.tychei = tychei;
 
 module.exports = sr;
 
-}, function(modId) {var map = {"./lib/alea":1572948423860,"./lib/xor128":1572948423861,"./lib/xorwow":1572948423862,"./lib/xorshift7":1572948423863,"./lib/xor4096":1572948423864,"./lib/tychei":1572948423865,"./seedrandom":1572948423866}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423860, function(require, module, exports) {
+}, function(modId) {var map = {"./lib/alea":1573029243146,"./lib/xor128":1573029243147,"./lib/xorwow":1573029243148,"./lib/xorshift7":1573029243149,"./lib/xor4096":1573029243150,"./lib/tychei":1573029243151,"./seedrandom":1573029243152}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1573029243146, function(require, module, exports) {
 // A port of an algorithm by Johannes Baagøe <baagoe@baagoe.com>, 2010
 // http://baagoe.com/en/RandomMusings/javascript/
 // https://github.com/nquinlan/better-random-numbers-for-javascript-mirror
@@ -184,7 +184,7 @@ if (module && module.exports) {
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423861, function(require, module, exports) {
+__DEFINE__(1573029243147, function(require, module, exports) {
 // A Javascript implementaion of the "xor128" prng algorithm by
 // George Marsaglia.  See http://www.jstatsoft.org/v08/i14/paper
 
@@ -268,7 +268,7 @@ if (module && module.exports) {
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423862, function(require, module, exports) {
+__DEFINE__(1573029243148, function(require, module, exports) {
 // A Javascript implementaion of the "xorwow" prng algorithm by
 // George Marsaglia.  See http://www.jstatsoft.org/v08/i14/paper
 
@@ -357,7 +357,7 @@ if (module && module.exports) {
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423863, function(require, module, exports) {
+__DEFINE__(1573029243149, function(require, module, exports) {
 // A Javascript implementaion of the "xorshift7" algorithm by
 // François Panneton and Pierre L'ecuyer:
 // "On the Xorgshift Random Number Generators"
@@ -457,7 +457,7 @@ if (module && module.exports) {
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423864, function(require, module, exports) {
+__DEFINE__(1573029243150, function(require, module, exports) {
 // A Javascript implementaion of Richard Brent's Xorgens xor4096 algorithm.
 //
 // This fast non-cryptographic random number generator is designed for
@@ -606,7 +606,7 @@ if (module && module.exports) {
 );
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423865, function(require, module, exports) {
+__DEFINE__(1573029243151, function(require, module, exports) {
 // A Javascript implementaion of the "Tyche-i" prng algorithm by
 // Samuel Neves and Filipe Araujo.
 // See https://eden.dei.uc.pt/~sneves/pubs/2011-snfa2.pdf
@@ -712,7 +712,7 @@ if (module && module.exports) {
 
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1572948423866, function(require, module, exports) {
+__DEFINE__(1573029243152, function(require, module, exports) {
 /*
 Copyright 2014 David Bau.
 
@@ -962,6 +962,6 @@ if ((typeof module) == 'object' && module.exports) {
 );
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-return __REQUIRE__(1572948423859);
+return __REQUIRE__(1573029243145);
 })()
 //# sourceMappingURL=index.js.map
