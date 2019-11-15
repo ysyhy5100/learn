@@ -1,9 +1,15 @@
 const posenet = require('@tensorflow-models/posenet')
+const regeneratorRuntime = require('@regenerator-runtime')
 //index.js
 
 Page({
-  onLoad: function () {
+  async onReady() {
     const camera = wx.createCameraContext(this)
+    this.canvas = wx.createCanvasContext('pose', this)
+    this.net = await posenet.load({
+      //
+    })
+    
     let count = 0
     const listener = camera.onCameraFrame((frame)=>{
       count++
@@ -13,6 +19,5 @@ Page({
       }
     })
     listener.start()
-    this.canvas = wx.createCanvasContext('pose', this)
   }
 })
