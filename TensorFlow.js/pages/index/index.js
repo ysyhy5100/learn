@@ -1,5 +1,5 @@
 const posenet = require('@tensorflow-models/posenet')
-const regeneratorRuntime = require('@regenerator-runtime')
+const regeneratorRuntime = require('regenerator-runtime')
 //index.js
 
 Page({

@@ -21,7 +21,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.1",
+	"libVersion": "2.9.3",
 	"appid": "wx89825deb66ee1888",
 	"projectname": "TensorFlow.js",
 	"debugOptions": {
